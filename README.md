@@ -1,1 +1,1 @@
-# advdev_on_aws
+# Advanced Developing on AWSトレーニングで使用するデモやサンプル集
