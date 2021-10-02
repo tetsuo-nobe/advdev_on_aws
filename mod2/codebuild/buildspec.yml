@@ -9,7 +9,7 @@ phases:
       - mvn package -f mod2/codebuild/pom.xml
       - mv mod2/codebuild/target/ROOT.war ROOT.war
       - mkdir .ebextensions
-      - mv mod2/codebuild/.ebextensions .ebextensions
+      - mv mod2/codebuild/.ebextensions .
 artifacts:
   files:
     - ROOT.war
