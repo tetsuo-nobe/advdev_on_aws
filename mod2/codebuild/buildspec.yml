@@ -7,8 +7,8 @@ phases:
   post_build:
     commands:
       - mvn package -f mod2/codebuild/pom.xml
-      - mv target/ROOT.war ROOT.war
+      - mv mod2/codebuild/target/ROOT.war ROOT.war
 artifacts:
   files:
     - ROOT.war
-    - .ebextensions/**/*
+    - mod2/codebuild/.ebextensions/**/*
