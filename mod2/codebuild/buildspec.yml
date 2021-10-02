@@ -6,7 +6,7 @@ phases:
       java: corretto11
   post_build:
     commands:
-      - mvn package
+      - mvn package -f /mod2/codebuild/pom.xml.
       - mv target/ROOT.war ROOT.war
 artifacts:
   files:
