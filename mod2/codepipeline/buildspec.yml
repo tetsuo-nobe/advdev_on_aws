@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  post_build:
+    commands:
+      - mvn package -f mod2/codepipeline/pom.xml
+      - mv mod2/codepipeline/target/Hello.war Hello.war
+      - mkdir .ebextensions
+      - cp -r mod2/codepipeline/.ebextensions/* .ebextensions/
+artifacts:
+  files:
+    - Hello.war
+    - .ebextensions/**/*
