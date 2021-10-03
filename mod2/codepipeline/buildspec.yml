@@ -7,10 +7,10 @@ phases:
   post_build:
     commands:
       - mvn package -f mod2/codepipeline/pom.xml
-      - mv mod2/codepipeline/target/Hello.war Hello.war
+      - mv mod2/codepipeline/target/ROOT.war ROOT.war
       - mkdir .ebextensions
       - cp -r mod2/codepipeline/.ebextensions/* .ebextensions/
 artifacts:
   files:
-    - Hello.war
+    - ROOT.war
     - .ebextensions/**/*
