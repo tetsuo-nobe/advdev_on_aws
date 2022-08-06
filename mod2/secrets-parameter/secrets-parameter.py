@@ -1,25 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import boto3
 import json
 import os
 from boto3.session import Session
 
-
-# In[2]:
-
-
 # デモ用のプロファイルを使用
-profile = 'advdev'
+profile = 'default'
 session = Session(profile_name=profile)
-
-
-# In[3]:
-
 
 # 初期設定
 ssm = session.client('ssm')
@@ -27,9 +13,6 @@ ssm_param_name = 'DemoParameter'
 sm_secret_name = 'DemoSecrets'
 region_name = 'ap-northeast-1'
 prefix = "/aws/reference/secretsmanager" 
-
-
-# In[4]:
 
 
 #　SSM Parameter Storeの内容の表示
@@ -46,9 +29,6 @@ def printSSMParameter():
   # 復号化したパラメータ値を配列に格納
   for param in ssm_response[ 'Parameters' ]:
      print("-- SSM Parameter -- :"+param['Name'] + ":" + param['Value'])
-
-
-# In[5]:
 
 
 #　SecretsS Managerのシークレットの内容の表示
@@ -73,10 +53,6 @@ def printSMSecret():
         for key in secret_dict.keys():
             print("-- Secret Manager Secret -- :"+ key + ":" + secret_dict[key])
 
-
-# In[6]:
-
-
 #　SSM Parameter StoreのAPIでSecrets Managerのシークレットの取得と表示
 def printSMSecretFromSSM():
   # パラメータ名から復号したパラメータ値を取得
@@ -93,21 +69,8 @@ def printSMSecretFromSSM():
       print("-- Secret Manager Secret from SSM -- :"+ key + ":" + secret_dict[key])
 
 
-# In[7]:
-
-
 printSSMParameter()
-
-
-# In[8]:
-
-
 printSMSecret()
-
-
-# In[9]:
-
-
 printSMSecretFromSSM()
 
 
