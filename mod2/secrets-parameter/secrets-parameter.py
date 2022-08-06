@@ -2,6 +2,7 @@ import boto3
 import json
 import os
 from boto3.session import Session
+from botocore.exceptions import ClientError
 
 # デモ用のプロファイルを使用
 profile = 'default'
