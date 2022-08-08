@@ -1,10 +1,10 @@
 ## AWS SAMのデモ
-### SAMを使用し、Lamnada関数と統合したAPI GatewayのREST APIを作成する
+### SAMを使用し、Lambda関数と統合したAPI GatewayのREST APIを作成する
 
 
 1. Cloud9のターミナルを開きます。
 
-2. デモ用のフォルダを作成して異動します。
+2. デモ用のフォルダを作成して移動します。
 
 ```
 mkdir aws-sam-demo
@@ -72,7 +72,7 @@ Template selection: 1
   - デフォルトで {message: hello world}というJSONを返します。必要に応じて変更します。　
 
 
-11. SAMでテストやデプロイの前準備を行います。
+11. SAMでサーバーレスアプリケーションを構築してテストやデプロイする前準備を行います。
 
 ```
 cd aws-sam-demo-app
