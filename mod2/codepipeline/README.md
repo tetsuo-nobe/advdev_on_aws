@@ -104,9 +104,7 @@
 
 1. **ブランチ名** で **自分が作成したブランチの名前**を選択します。(例: branch99)
 
-1. **検出オプションを変更する** で **Amazon CloudWatch Events (推奨)** を選択します。
-
-![codepipeline1](images/CodePipeline1.png)
+![codepipeline1](images/CodePipeline-Source.png)
 
 1. ページ右下にある **次に** をクリックします。
  
