@@ -102,7 +102,9 @@
 
 1. **リポジトリ名** で `simple-java` を選択します。
 
-1. **ブランチ名** で **自分が作成したブランチの名前**を選択します。(例: branch99)
+1. **ブランチ名** で **自分が作成したブランチの名前** を選択します。(例: branch99)
+
+1. **検出オプションを変更する** で **AWS CodePipeline** を選択します。
 
 ![codepipeline1](images/CodePipeline-Source.png)
 
