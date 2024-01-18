@@ -1,0 +1,41 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+
+Globals:
+  Function:
+    Timeout: 3
+    MemorySize: 128
+
+Resources:
+  MyLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: my-boto3-layer
+      Description: My boto3 Layer
+      ContentUri: myLayer/boto3-layer.zip
+      CompatibleRuntimes:
+        - python3.9
+        - python3.10
+        - python3.11
+  WithLayerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: WithLayerFunction
+      CodeUri: withLayerFunction/
+      Layers:
+        - !Ref MyLayer
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Architectures:
+        - x86_64
+  WithoutLayerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: WithoutLayerFunction
+      CodeUri: withoutLayerFunction/
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Architectures:
+        - x86_64
+
