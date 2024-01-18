@@ -7,6 +7,8 @@
 * AWS Lambda 関数: WithLayerFunction
     - 上記 Lambda レイヤーを使用する Lambda 関数
     - withLayerFunction/app.py
+    - withLayerFunction/requirements.txt
+        -  (この requirements.txt は、Lambda Layer の既知の問題回避のため便宜上用意しているもの）
 * AWS Lambda 関数: WithoutLayerFunction
     - Lambda レイヤーを使用しない Lambda 関数
     - **コードは、WithLayerFunctionと同じ**
