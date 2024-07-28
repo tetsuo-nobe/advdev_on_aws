@@ -94,7 +94,7 @@
 
 1. **ロールの ARN** で **CodePipelineRole** を選択します。
 
-![codepipeline0](images/CodePipeline0.png)
+![codepipeline0](images/CodePipeline0b.png)
 
 1. ページ右下にある **次に** をクリックします。
 
