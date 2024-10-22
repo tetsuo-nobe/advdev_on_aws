@@ -111,12 +111,14 @@
 ![codepipeline1](images/CodePipeline-Source.png)
 
 1. ページ右下にある **次に** をクリックします。
- 
-1. **プロバイダー** で **AWS CodeBuild** を選択します。
+
+1. **プロバイダーを構築する** で **Other build providers** を選択します。
+   
+1. ドロップダウンリストから **AWS CodeBuild** を選択します。
 
 1. **プロジェクト名** で `simple-java-build-project` を選択します。
 
-![codepipeline2](images/CodePipeline2.png)
+![codepipeline2](images/codebuild20241023.png)
 
 1. ページ右下にある **次に** をクリックします。
 
