@@ -96,8 +96,6 @@
 
 1. **ロールの ARN** で **CodePipelineRole** を選択します。
 
-![codepipeline0](images/CodePipeline0b.png)
-
 1. ページ右下にある **次に** をクリックします。
 
 1. **ソースプロバイダー** で **AWS CodeCommit** を選択します。
