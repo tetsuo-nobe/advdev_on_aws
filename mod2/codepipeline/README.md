@@ -124,7 +124,7 @@
 
 1. **デプロイグループ** で **自分が作成した CodeDeploy デプロイグループの名前**を選択します。(例: deploygroup99)
 
-![codepipeline3](images/CodePipeline3.png)
+![codepipeline3](images/deploystage.png)
 
 1. ページ右下にある **次に** をクリックします。
 
