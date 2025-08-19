@@ -114,7 +114,7 @@
 
 1. **プロジェクト名** で `simple-java-build-project` を選択します。
 
-![codepipeline2](images/codebuild20241023.png)
+![codepipeline2](images/codebuild20250819.png)
 
 1. ページ右下にある **次に** をクリックします。
 
@@ -138,7 +138,7 @@
 
 * 下図のようになるまで待機します。（約 2 分ほど）
 
-![result](images/CodePipeline-result.png)
+![result](images/CodePipeline-result20250819.png)
 
 ---
 
