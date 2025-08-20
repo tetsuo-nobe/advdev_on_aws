@@ -62,7 +62,7 @@ cdk deploy
 ```
 
 10. マネジメントコンソールで CloudFormation のページを表示し、スタックのステータスが CREATE_COMPLETE になっていることを確認します。
-    - 出力タブを選択して、apiEndpointXXX の値の最後に `/hello` をつけた URL をブラウザアクセスし、Hello World！ と表示されることを確認します。
+    - 出力タブを選択して、**apiEndpointXXX** の値の最後に `/hello` をつけた URL をブラウザアクセスし、Hello World！ と表示されることを確認します。
 
 
 11. 作成したスタックを削除する場合は下記を実行します。確認の応答を求められた場合、`y` を入力します。
