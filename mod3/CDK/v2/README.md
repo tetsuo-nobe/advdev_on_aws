@@ -44,7 +44,7 @@ cdk init app --language typescript
 7. lib/aws-cdkv2-demo-stack.ts を開いて、Lambda関数とAPI GatewayのAPIをデプロイするコードを追記します。
 
 ```
-(このフォルダのaws-cdkv2-demo-stack.tsの内容を参照してください。)
+(このフォルダのaws-cdkv2-demo-stack.tsの内容に置き換え、13行目の functionName の末尾に自分の2桁の番号を追記して保存します。)
 ```
 
 
