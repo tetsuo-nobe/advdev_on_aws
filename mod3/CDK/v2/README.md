@@ -1,5 +1,5 @@
-## AWS CDKv2のデモ
-### CDKv2を使用し、Lamnada関数と統合したAPI GatewayのREST APIを作成する
+## AWS CDK v2のワーク
+### CDK v2 を使用し、Lamnada関数と統合した API Gateway の REST API を作成する
 
 
 1. Cloud9のターミナルを開きます。
@@ -29,20 +29,34 @@ cdk init app --language typescript
 (このフォルダのindex.pyの内容を参照してください。)
 ```
 
-6. lib/aws-cdkv2-demo-stack.tsを編集して、Lambda関数とAPI GatewayのAPIをデプロイするコードを追記します。
+6. bin/aws-cdkv2-demo.ts を開いて、6行目の `AwsCdkv2DemoStack` を `AwsCdkv2DemoStack99` のように末尾に自分の2桁の番号を追記して保存します。
+
+
+7. lib/aws-cdkv2-demo-stack.ts を開いて、Lambda関数とAPI GatewayのAPIをデプロイするコードを追記します。
 
 ```
 (このフォルダのaws-cdkv2-demo-stack.tsの内容を参照してください。)
 ```
 
-7. CDKを使ってスタックを作成します。
-(初回の場合は、先にcdk bootstrap を実行して CDKが使用するS3バケットを作成します。)
+
+8. CloudFormation テンプレートに変換した場合のコードを確認します。
+
+```
+cdk synth
+```
+
+9. CDKを使ってスタックを作成します。確認の応答を求められた場合、`y` を入力します。
+(初回の場合は、先にcdk bootstrap を実行して CDKが使用するS3バケットを作成しますが今回は不要です。)
 
 ```
 cdk deploy
 ```
 
-8. 作成したスタックを削除する場合は下記を実行します。
+10. マネジメントコンソールで CloudFormation のページを表示し、スタックのステータスが CREATE_COMPLETE になっていることを確認します。
+    - 出力タブを選択して、apiEndpointXXX の値の最後に `/hello` をつけた URL をブラウザアクセスし、Hello World！ と表示されることを確認します。
+
+
+11. 作成したスタックを削除する場合は下記を実行します。確認の応答を求められた場合、`y` を入力します。
 
 ```
 cdk destroy
