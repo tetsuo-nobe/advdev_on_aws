@@ -158,7 +158,7 @@
     - 例: `ec2-99-999-999-99.ap-northeast-1.compute.amazonaws.com:8080`
     - (**http://** でアクセスして下さい。) 
 
-1. **Hello World!** という文字が表示されることを確認します。
+1. **Hello World** という文字が表示されることを確認します。
 
 ---
 
